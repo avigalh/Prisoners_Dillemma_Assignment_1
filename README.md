@@ -32,7 +32,7 @@ Every strategy is a function that receives the same three inputs: `my_moves` (it
 
 # How to run
 
-1. Install the dependencies: `uv sync`
+1. Install pytest: `uv add pytest`
 2. Run the example games: `uv run run_game.py`
    (or open `run_game.py` in VS Code and click ▶ Run)
 3. Run the tests: `uv run pytest`
