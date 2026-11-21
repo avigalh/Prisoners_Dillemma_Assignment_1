@@ -22,7 +22,8 @@ def best_response(my_moves, opponent_moves, score_dilemma_dict):
     # when there are no previous moves, cooperate.
     if len(opponent_moves) == 0:
         return "Cooperate" 
-    # Look up the opponent's possible scores, defined by *my* last move. [1] = opponent's score from the score table.
+    # Look up the opponent's possible scores, defined by *my* last move.
+    # [1] = opponent's score from the score table.
     opp_score_if_cooperate = score_dilemma_dict[(my_moves[-1], "Cooperate")][1]
     opp_score_if_defect = score_dilemma_dict[(my_moves[-1], "Defect")][1]
     # on a tie (equal score) also cooperate.
